@@ -1,0 +1,71 @@
+homeassistant:
+  name: Home
+  latitude: !secret home_latitude
+  longitude: !secret home_longitude
+  elevation: 39
+  unit_system: imperial
+  temperature_unit: F
+  time_zone: America/Chicago
+  customize: !include_dir_merge_named customize
+
+http:
+  api_password: !secret http_password
+  ip_ban_enabled: True
+  login_attempts_threshold: 5
+  trusted_networks:
+    - 127.0.0.1
+    - 192.168.1.0/24
+
+mqtt:
+  broker: 127.0.0.1
+  port: 1883
+  client_id: home-assistant-1
+  username: !secret mqtt_user
+  password: !secret mqtt_password
+
+zwave:
+  usb_path: /dev/ttyACM0
+
+# Weather Prediction
+#sensor:
+#  platform: yr
+#  monitored_conditions:
+#    - symbol
+#    - temperature
+
+# Text to speech
+tts:
+  platform: google
+
+
+
+################
+##  Enables   ##
+################
+
+frontend:
+config:
+updater:
+discovery:
+conversation:
+history:
+logbook:
+sun:
+alexa:
+
+  
+################
+##  Includes  ##
+################
+
+scene: !include_dir_list scenes
+sensor: !include sensors.yaml
+binary_sensor: !include binary_sensors.yaml
+device_tracker: !include device_trackers.yaml
+automation: !include automation.yaml
+zone: !include zones.yaml
+panel_custom: !include panels.yaml
+lock: !include locks.yaml
+group: !include groups.yaml
+notify: !include notify.yaml
+intent_script: !include_dir_merge_named intent_script

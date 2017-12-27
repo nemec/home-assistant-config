@@ -1,0 +1,27 @@
+# Files
+*.conf
+*.db
+*.db-journal
+*.log
+*.noload
+*.sqlite
+*.txt
+*.xml
+.HA_VERSION
+known_devices.yaml
+google_calendars.yaml
+secrets.yaml
+.google.token
+.uuid
+august-config.json
+
+
+# Directories
+deps
+
+
+# Python Caches
+__pycache__
+*.pyc
+
+

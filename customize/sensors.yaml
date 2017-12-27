@@ -1,0 +1,55 @@
+sensor.aeotec_zw096_smart_switch_6_current:
+  friendly_name: Bedroom Fan Current
+  hidden: true
+sensor.aeotec_zw096_smart_switch_6_energy:
+  friendly_name: Bedroom Fan Energy
+sensor.aeotec_zw096_smart_switch_6_power:
+  friendly_name: Bedroom Fan Power
+  hidden: true
+sensor.aeotec_zw096_smart_switch_6_voltage:
+  friendly_name: Bedroom Fan Voltage
+  hidden: true
+sensor.aeotec_zw096_smart_switch_6_previous_reading:
+  hidden: true
+
+sensor.yr_symbol:
+  friendly_name: Weather
+sensor.yr_temperature:
+  friendly_name: Temp
+
+sensor.ecolink_door_access_control:
+  hidden: true
+sensor.ecolink_door_alarm_level:
+  hidden: true
+sensor.ecolink_door_alarm_type:
+  hidden: true
+sensor.ecolink_door_burglar:
+  hidden: true
+sensor.ecolink_door_power_management:
+  hidden: true
+sensor.ecolink_door_sourcenodeid:
+  hidden: true
+
+sensor.kitchen_multisensor_relative_humidity:
+  friendly_name: Kitchen Humidity
+sensor.kitchen_multisensor_temperature:
+  friendly_name: Kitchen Temp
+sensor.kitchen_multisensor_ultraviolet:
+  hidden: true
+sensor.kitchen_multisensor_sourcenodeid:
+  hidden: true
+sensor.kitchen_multisensor_luminance:
+  hidden: true
+sensor.kitchen_multisensor_alarm_level:
+  hidden: true
+sensor.kitchen_multisensor_alarm_type:
+  hidden: true
+sensor.kitchen_multisensor_burglar:
+  hidden: true
+
+sensor.fibaro_system_fgrgbwm441_rgbw_controller_exporting_10_32:
+  hidden: true
+sensor.fibaro_system_fgrgbwm441_rgbw_controller_power_10_4:
+  friendly_name: Kitchen LED Power
+sensor.fibaro_system_fgrgbwm441_rgbw_controller_power_10_8:
+  hidden: true

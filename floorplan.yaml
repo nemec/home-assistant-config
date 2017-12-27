@@ -1,0 +1,28 @@
+name: Apartment Floorplan
+image: /local/custom_ui/floorplan/floorplan.svg
+stylesheet: /local/custom_ui/floorplan/floorplan.css
+warnings:
+#pan_zoom:
+date_format: MMM DD YYYY
+
+groups:
+  - name: Locks
+    entities:
+      - lock.august
+    states:
+      - state: 'unlocked'
+        class: 'lock-unlocked'
+      - state: 'locked'
+        class: 'lock-locked'
+    image_template: '
+      var imageName = "";
+      switch(entity.state) {
+        case "unlocked":
+          imageName = "lock-unlocked";
+          break;
+        case "locked":
+          imageName = "lock-locked";
+          break;
+      }
+      return "/local/custom_ui/floorplan/images/" + imageName + ".svg";
+    '

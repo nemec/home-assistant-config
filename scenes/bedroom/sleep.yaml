@@ -1,0 +1,5 @@
+- name: Sleep
+  entities:
+    group.all_lights: off
+    group.all_locks: locked
+    switch.aeotec_zw096_smart_switch_6_switch: on

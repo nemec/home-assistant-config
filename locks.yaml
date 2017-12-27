@@ -1,0 +1,4 @@
+- platform: august
+  friendly_name: "Front Door"
+  file_path: /home/homeassistant/.homeassistant/august-config.json
+  timeout: 00:00:10

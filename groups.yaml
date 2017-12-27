@@ -1,0 +1,17 @@
+#default_view:
+#  view: yes
+#  icon: mdi:home
+#  entities:
+#    - group.all_lights
+
+bedroom:
+  name: Bedroom
+  icon: mdi:bed
+  entities:
+#   - switch.aeotec_zw096_smart_switch_6_switch
+    - light.bedroom_lightbulb_level_9_0
+
+scenes:
+  name: Scenes
+  entities:
+    - scene.sleep

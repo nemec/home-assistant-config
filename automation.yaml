@@ -1,0 +1,69 @@
+- alias: 'Door Left Unlocked'
+  trigger:
+    platform: state
+    entity_id: lock.august
+    from: 'locked'
+    to: 'unlocked'
+    for:
+      minutes: 5
+  action:
+    service: notify.notify
+    data:
+      message: "Front door has been unlocked for 5 minutes"
+
+- alias: 'Door Left Open'
+  trigger:
+    platform: state
+    entity_id: binary_sensor.ecolink_door_sensor
+    from: 'off'
+    to: 'on'
+    for:
+      minutes: 5
+  action:
+    service: notify.notify
+    data:
+      message: "Front door has been open for 5 minutes"
+- alias: 'Door Open When Away'
+  trigger:
+    platform: state
+    entity_id: binary_sensor.ecolink_door_sensor
+    from: 'off'
+    to: 'on'
+  condition:
+    condition: state
+    entity_id: device_tracker.phone_galaxys6
+    state: not_home
+  action:
+    service: notify.notify
+    data:
+      message: "Door opened when you were away"
+
+- alias: 'Unlock Door When Arrive Home'
+  trigger:
+    platform: state
+    entity_id: device_tracker.phone_galaxys6
+    from: 'not_home'
+    to: 'home'
+    for:
+      seconds: 5
+  action:
+    service: lock.unlock
+    entity_id: lock.august
+
+- alias: 'Sunset Lights On'
+  trigger:
+    platform: sun
+    event: sunset
+    offset: "-00:45:00"
+  action:
+    service: homeassistant.turn_on
+    entity_id: group.bedroom
+
+#- alias: 'Sunrise Lights Off'
+#  trigger:
+#    platform: sun
+#    event: sunrise
+#    offset: "+00:15:00"
+#  action:
+#    service: homeassistant.turn_off
+#    entity_id: group.outdoor_lights
