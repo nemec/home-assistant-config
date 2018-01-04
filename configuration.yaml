@@ -37,7 +37,21 @@ zwave:
 tts:
   platform: google
 
+discovery:
+  ignore:
+    - plex_mediaserver
 
+
+
+################
+##  Logging   ##
+################
+
+logger:
+  default: warning
+  logs:
+    homeassistant.components.alexa: debug
+  
 
 ################
 ##  Enables   ##
@@ -46,7 +60,6 @@ tts:
 frontend:
 config:
 updater:
-discovery:
 conversation:
 history:
 logbook:
