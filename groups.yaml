@@ -7,9 +7,23 @@
 bedroom:
   name: Bedroom
   icon: mdi:bed
+  control: hidden
   entities:
-#   - switch.aeotec_zw096_smart_switch_6_switch
-    - light.bedroom_lightbulb_level_9_0
+    - light.ge_unknown_type4c42_id3031_level
+    - switch.aeotec_zw096_smart_switch_6_switch
+
+car:
+  name: Dan's Car
+  icon: mdi:car
+  control: hidden
+  entities:
+    - switch.c71e5d401fbf11e795090050568f5b13_remote_start
+    - sensor.c71e5d401fbf11e795090050568f5b13_fuel
+    - sensor.c71e5d401fbf11e795090050568f5b13_odometer
+    - sensor.c71e5d401fbf11e795090050568f5b13_range
+    - lock.c71e5d401fbf11e795090050568f5b13
+    - binary_sensor.c71e5d401fbf11e795090050568f5b13_door_open
+    - binary_sensor.c71e5d401fbf11e795090050568f5b13_window_open
 
 scenes:
   name: Scenes

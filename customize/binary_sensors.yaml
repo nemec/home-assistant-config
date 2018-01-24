@@ -1,5 +1,10 @@
 binary_sensor.ecolink_door_sensor:
-  friendly_name: Front Door Open
+  friendly_name: 'Front Door Open'
 
 binary_sensor.kitchen_multisensor_sensor:
-  friendly_name: Kitchen Multisensor
+  friendly_name: 'Kitchen Multisensor'
+
+binary_sensor.c71e5d401fbf11e795090050568f5b13_door_open:
+  friendly_name: 'Doors Open'
+binary_sensor.c71e5d401fbf11e795090050568f5b13_window_open:
+  friendly_name: 'Windows Open'

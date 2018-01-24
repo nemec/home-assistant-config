@@ -1,18 +1,22 @@
 switch.aeotec_zw096_smart_switch_6_switch:
-  friendly_name: Bedroom Fan
+  friendly_name: 'Bedroom Fan'
   icon: mdi:fan
 
-light.level:
-  friendly_name: Dresser Lamp
-  icon: mdi:lightbulb
+light.ge_unknown_type4c42_id3031_level:
+  friendly_name: 'Dresser Lamp'
+  icon: mdi:lamp
 
 light.fibaro_system_fgrgbwm441_rgbw_controller_level_10_0_6:
-  friendly_name: Kitchen LED Strip White
+  friendly_name: 'Kitchen LED Strip White'
 light.fibaro_system_fgrgbwm441_rgbw_controller_level_10_0_2:
-  friendly_name: Kitchen LED Strip Green
+  friendly_name: 'Kitchen LED Strip Green'
 light.fibaro_system_fgrgbwm441_rgbw_controller_level_10_0_3:
-  friendly_name: Kitchen LED Strip Blue
+  friendly_name: 'Kitchen LED Strip Blue'
 light.fibaro_system_fgrgbwm441_rgbw_controller_level_10_0_5:
   friendly_name: 'Kitchen LED Strip ???'
 light.fibaro_system_fgrgbwm441_rgbw_controller_level_10_0_4:
   friendly_name: 'Kitchen LED Strip ???'
+
+switch.c71e5d401fbf11e795090050568f5b13_remote_start:
+  friendly_name: 'Remote Start'
+  assumed_state: true

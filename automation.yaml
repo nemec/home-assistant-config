@@ -56,7 +56,7 @@
     event: sunset
     offset: "-00:45:00"
   action:
-    service: homeassistant.turn_on
+    service: light.turn_on
     entity_id: group.bedroom
 
 #- alias: 'Sunrise Lights Off'

@@ -1,55 +1,97 @@
 sensor.aeotec_zw096_smart_switch_6_current:
-  friendly_name: Bedroom Fan Current
+  friendly_name: 'Bedroom Fan Current'
   hidden: true
+
 sensor.aeotec_zw096_smart_switch_6_energy:
-  friendly_name: Bedroom Fan Energy
+  friendly_name: 'Bedroom Fan Energy'
+
 sensor.aeotec_zw096_smart_switch_6_power:
-  friendly_name: Bedroom Fan Power
+  friendly_name: 'Bedroom Fan Power'
   hidden: true
+
 sensor.aeotec_zw096_smart_switch_6_voltage:
-  friendly_name: Bedroom Fan Voltage
+  friendly_name: 'Bedroom Fan Voltage'
   hidden: true
+
 sensor.aeotec_zw096_smart_switch_6_previous_reading:
   hidden: true
 
+
 sensor.yr_symbol:
-  friendly_name: Weather
+  friendly_name: 'Weather'
+
 sensor.yr_temperature:
-  friendly_name: Temp
+  friendly_name: 'Temp'
+
 
 sensor.ecolink_door_access_control:
   hidden: true
+
 sensor.ecolink_door_alarm_level:
   hidden: true
+
 sensor.ecolink_door_alarm_type:
   hidden: true
+
 sensor.ecolink_door_burglar:
   hidden: true
+
 sensor.ecolink_door_power_management:
   hidden: true
+
 sensor.ecolink_door_sourcenodeid:
   hidden: true
 
+
 sensor.kitchen_multisensor_relative_humidity:
-  friendly_name: Kitchen Humidity
+  friendly_name: 'Kitchen Humidity'
+
 sensor.kitchen_multisensor_temperature:
-  friendly_name: Kitchen Temp
+  friendly_name: 'Kitchen Temp'
+
 sensor.kitchen_multisensor_ultraviolet:
   hidden: true
+
 sensor.kitchen_multisensor_sourcenodeid:
   hidden: true
+
 sensor.kitchen_multisensor_luminance:
   hidden: true
+
 sensor.kitchen_multisensor_alarm_level:
   hidden: true
+
 sensor.kitchen_multisensor_alarm_type:
   hidden: true
+
 sensor.kitchen_multisensor_burglar:
   hidden: true
 
-sensor.fibaro_system_fgrgbwm441_rgbw_controller_exporting_10_32:
+
+sensor.fibaro_system_fgrgbwm441_rgbw_controller_exporting:
   hidden: true
+
 sensor.fibaro_system_fgrgbwm441_rgbw_controller_power_10_4:
-  friendly_name: Kitchen LED Power
-sensor.fibaro_system_fgrgbwm441_rgbw_controller_power_10_8:
+  friendly_name: 'Kitchen LED Power'
+
+sensor.fibaro_system_fgrgbwm441_rgbw_controller_power:
+  hidden: true
+
+# Car
+sensor.c71e5d401fbf11e795090050568f5b13_fuel:
+  friendly_name: 'Fuel Level'
+  icon: mdi:fuel
+
+sensor.c71e5d401fbf11e795090050568f5b13_odometer:
+  friendly_name: 'Odometer'
+  icon: mdi:gauge
+
+sensor.c71e5d401fbf11e795090050568f5b13_range:
+  friendly_name: 'Driving Range'
+  icon: mdi:road-variant
+
+sensor.c71e5d401fbf11e795090050568f5b13_trip_a:
+  hidden: true
+
+sensor.c71e5d401fbf11e795090050568f5b13_trip_b:
   hidden: true

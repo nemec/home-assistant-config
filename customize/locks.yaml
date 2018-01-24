@@ -1,2 +1,5 @@
 lock.august:
-  friendly_name: Front Door
+  friendly_name: 'Front Door'
+
+lock.c71e5d401fbf11e795090050568f5b13:
+  friendly_name: 'Door Lock'

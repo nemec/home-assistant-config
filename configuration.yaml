@@ -6,7 +6,7 @@ homeassistant:
   unit_system: imperial
   temperature_unit: F
   time_zone: America/Chicago
-  customize: !include_dir_merge_named customize
+  customize: !include_dir_merge_named customize/
 
 http:
   api_password: !secret http_password
@@ -24,7 +24,7 @@ mqtt:
   password: !secret mqtt_password
 
 zwave:
-  usb_path: /dev/ttyACM0
+  usb_path: /dev/zwave # udev rule assigns the device name
 
 # Weather Prediction
 #sensor:
@@ -41,7 +41,15 @@ discovery:
   ignore:
     - plex_mediaserver
 
-
+lexus_enform:
+  username: !secret lexus_username
+  password: !secret lexus_password
+  scan_interval: 300
+  force_update: false
+  push_notifications: false
+  vins:
+    - friendly_name: Dan's Car
+      vin: !secret lexus_vin
 
 ################
 ##  Logging   ##
